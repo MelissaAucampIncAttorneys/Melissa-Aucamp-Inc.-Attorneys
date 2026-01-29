@@ -135,13 +135,41 @@
       h1 { font-size: 2.3rem; }
       h2 { font-size: 1.9rem; }
     }
-  </style>
+      /* Cool but professional enhancements */
+    a { color: var(--soft-red); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .practice-area:hover {
+      transform: translateY(-4px);
+      transition: 0.3s ease;
+      background: rgba(255,255,255,0.06);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: var(--soft-red);
+      margin: 1.2rem auto 2rem;
+      border-radius: 2px;
+    }
+
+    .icon {
+      color: var(--soft-red);
+      margin-right: 0.4rem;
+    }
+
+</style>
 </head>
 <body>
 
 <header>
   <img src="LOGO 1.png" alt="Melissa Aucamp Inc. Attorneys Logo" />
   <h1>Melissa Aucamp Inc. Attorneys</h1>
+  <div class="divider"></div>
   <p>
     Melissa Aucamp Inc. Attorneys is a professional and approachable law firm offering personalised, strategic, and cost-effective legal solutions. We are committed to protecting our clients’ interests and providing clear legal guidance across a wide range of civil law matters.
   </p>
@@ -149,6 +177,7 @@
 
 <section>
   <h2>Our Practice Areas</h2>
+  <div class="divider"></div>
 
   <div class="practice-area">
     <h3>Labour Law</h3>
@@ -239,17 +268,18 @@
 </section>
 
 <section class="cta">
+  <img src="LOGO 1.png" alt="Melissa Aucamp Inc. Attorneys Logo" style="max-width:120px;margin-bottom:1rem;" />
   <h2>Contact Us</h2>
   <p>
     <strong>Call us today for a consultation</strong><br />
-    📞 074 464 7147<br />
-    ✉️ aucampmelissa97@gmail.com
+    <span class="icon">📞</span>074 464 7147<br />
+    <span class="icon">✉️</span>aucampmelissa97@gmail.com
   </p>
 </section>
 
 <footer>
   © Melissa Aucamp Inc. Attorneys<br />
-  1143 Braampretorius Street, Montana Park, Pretoria
+  1143 Braam Pretorius Street, Montana Park, Pretoria
 </footer>
 
 </body>
