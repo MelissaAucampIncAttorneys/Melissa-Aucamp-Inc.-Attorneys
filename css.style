@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* Red wave edges */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: -1;
+  background: linear-gradient(180deg, #8b0000, #b30000);
+  opacity: 0.2;
+}
+
+body::before { left: 0; }
+body::after { right: 0; }
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.LOGO1.png {
+  width: 320px;
+  max-width: 90%;
+}
+
+nav {
+  background: #2a2a2a;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  color: #ff4d4d;
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  font-size: 18px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.card {
+  background: #2b2b2b;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+footer {
+  background: #2a2a2a;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+}
+
+.contact {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 32px; }
+  nav a { display: block; margin: 10px 0; }
+}
