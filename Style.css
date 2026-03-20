@@ -1,4 +1,37 @@
-/* GLOBAL SITE THEME – Melissa Aucamp Inc Attorneys */
+body {
+    background: #1e1e1e;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Animated red waves */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #c8102e, #8b0000, #c8102e);
+    animation: waveMove 6s infinite alternate ease-in-out;
+    opacity: 0.25;
+}
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
+@keyframes waveMove {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(40px); }
+}/* GLOBAL SITE THEME – Melissa Aucamp Inc Attorneys */
 
 body{
 margin:0;
